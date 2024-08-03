@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ACA0FC;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 40%;
+}
+
+@media (max-width: 1000px) {
+    .box{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px){
+    .box{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+    .box{
+        width: 100%;
+        border-radius: 0px;
+        padding: auto;
+    }
+
+    .upper button{
+        width: 10rem;
+    }
+}
+
+.upper{
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.upper input{
+    width: 15rem;
+    border: none;
+    border-bottom: 2px solid #ACA0FC;
+    font-size: 20px
+}
+
+.upper button{
+    width: 8rem;
+    background-color: #ACA0FC;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.lower{
+    width: 80%;
+    height: 12rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.lowerSample{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.lowerSample h1{
+    font-weight: 500;
+}
+
+.lowerSample div{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+#sampleFade{
+    margin-top: .5rem;
+    color: rgb(167, 167, 167);
+}
+
+.description{
+    margin-bottom: 1rem;
+    color: rgb(61, 61, 61);
+}
+
+.descriptionLower{
+    border-left: 6px solid #ACA0FC;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: rgb(48, 48, 48);
+}
